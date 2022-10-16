@@ -14,6 +14,7 @@ body, html {
   min-width: 400px;
   padding: 10px;
   margin: 10px auto;
+  overflow: hidden;
 }
 
 h4 {
@@ -49,3 +50,33 @@ img:hover {
 /* create a column class! make sure all of the divs within 'container's have a class of 'column' */
 
 /* create your tile classes! we recommend .small .med .large */
+
+.column {
+  width: 30%;
+  display: block;
+  float: left;
+}
+
+.container>.column:first-of-type {
+  margin-left: 28px;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.small {
+  width: 98%;
+}
+
+.med {
+  width: 200%;
+  column-span: calc(2);
+}
+
+
+.large {
+  width: 80%;
+  max-width: 600px;
+  min-width: 400px;
+}
